@@ -27,17 +27,17 @@ These combined csv files then are used by the R script to further tidy up the da
 In summary, requirements 3 and 4 are fulfilled by the perl script and requirements 1,4 and 5 are fulfilled by the R script. 
 
 DESCRIPTION : R Scipt
-# read the test data csv file prepared by the perl script
-# select the summary variables - mean and std
-# add the column tidy_data and set the value to test - for test data
-# create the summary tidy set for test data
-# read the train data csv file prepared by the perl script
-# select the summary variables - mean and std
-# add the column tidy_data and set the value to train - for train data
-# create the summary tidy set for test data
-# combine the test and train data into a combo by using rbind()
-# create the summary tidy set for combo data
-# write the summary tidy data to csv files for test, train and combo datasets
+(i) read the test data csv file prepared by the perl script
+(ii) select the summary variables - mean and std
+(iii) add the column tidy_data and set the value to test - for test data
+(iv) create the summary tidy set for test data
+(v) read the train data csv file prepared by the perl script
+(vi) select the summary variables - mean and std
+(vii) add the column tidy_data and set the value to train - for train data
+(viii) create the summary tidy set for test data
+(ix) combine the test and train data into a combo by using rbind()
+(x) create the summary tidy set for combo data
+(xi) write the summary tidy data to csv files for test, train and combo datasets
 
 DESCRIPTION : perl Script
 Takes 8 arguments - path names to the input txt files in a specific order. The order is critical. 
