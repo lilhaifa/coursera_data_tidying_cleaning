@@ -48,5 +48,6 @@ subroutine txtocsv_b : reads the features list and converts the feature descript
 subroutine merge_dset : merges the subject ID, activity labels and measurement data (561 data points) into a single csv - one each for test and train data. 
 
 NOTE:  The perl script can be run independently from the system command line, not necessarily from within the R script
+       Read the commented description in the scripts.
 
 PORTABILITY:  Both scripts are portable on linux and macos. Not tested over windows. 
