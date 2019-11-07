@@ -15,6 +15,7 @@ library(tibble)
 #
 # change the paths below to the actual paths where these are available
 # Must keep the sequence the same - this is critical
+# The 3 output csv files will be produced in path thay you indicate below
 
 x_train_f <- "/Users/lil.haifa83/DS/UCI_HAR_Dataset/train/X_train.txt"
 x_test_f <- "/Users/lil.haifa83/DS/UCI_HAR_Dataset/test/X_test.txt"
@@ -30,6 +31,8 @@ sub_test_f <- "/Users/lil.haifa83/DS/UCI_HAR_Dataset/test/subject_test.txt"
 
 combo_train_f <- "/Users/lil.haifa83/DS/UCI_HAR_Dataset/train/subject_train.csv"
 combo_test_f <- "/Users/lil.haifa83/DS/UCI_HAR_Dataset/test/subject_test.csv"
+
+# these are the 3 final tidy datasets in 3 csv files. Change the path as you wish to
 combo_tidy_dset <- "/Users/lil.haifa83/DS/UCI_HAR_Dataset/uci_har_combo_tidy_dset.csv"
 train_tidy_dset <- "/Users/lil.haifa83/DS/UCI_HAR_Dataset/uci_har_train_tidy_dset.csv"
 test_tidy_dset <- "/Users/lil.haifa83/DS/UCI_HAR_Dataset/uci_har_test_tidy_dset.csv"
@@ -41,7 +44,7 @@ sys_cmd <- paste(pre_anlys_pgm,x_train_f,x_test_f,act_label_f,y_train_f,y_test_f
 print(sys_cmd)
 
 # run the system command now to obtain the output of the pre-analysis in the above mentioned 2 csv files
-# system(sys_cmd)
+ system(sys_cmd)
 
 # now begins the analysis part in R 
 
